@@ -1,0 +1,129 @@
+body{
+    margin-left: 10%;
+    margin-right: 10%;
+    color: white;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    position: -webkit-sticky; /* Safari needs this if thats the browser used */
+    position: sticky;/*makes the navbar stay at the top of the page when scrolling*/
+    top: 0;
+    box-shadow: 0px 5px 5px rgba(19, 1, 100, 0.2);
+    background-color: #846191;
+    padding: 30px; 
+    margin: 20px;
+    text-align: center;
+}
+.nav{
+    background-color: #846191;        
+}
+nav a{
+    padding: 10px; 
+    text-decoration: none;   
+}
+nav a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 5px rgba(1, 5, 252, 0.714);
+    border-radius: 5px;
+    background-color: rgb(146, 211, 146);  
+    color: black;  
+}
+a{
+    color: white;
+}
+a:hover{
+    color: aquamarine;
+}
+
+section p{
+    color: black;
+}
+#first-section {
+    display: flex;  /* Changed display to flex for horizontal layout */
+  }
+
+  .content-wrapper {
+    display: flex;  /* Added display: flex for image and content side-by-side */
+  }
+
+  .bias-image {
+    margin-right: 10px;  /* Add margin for better spacing */
+  }
+
+  .picture-content {
+    padding: 5px;
+  }
+
+  .layers {
+    border: solid black 1px;
+  }
+  #firstLayer{
+    background-color: rgb(229, 171, 126);
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px rgba(19, 1, 100, 0.2);
+  }
+
+  #secondLayer{
+    margin-top: 50px;
+    background-color: rgb(173, 130, 193);
+    padding: 5px;
+    border-radius: 4px;
+    box-shadow: 0px 5px 5px rgba(19, 1, 100, 0.2);
+  }
+  #thirdLayer{
+    margin-top: 60px;
+    background-color: rgb(47, 82, 127);
+    padding: 5px;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 0px 5px 5px rgba(19, 1, 100, 0.2);
+  }
+#inaccuracies {
+    width: 700px !important;
+    height: 700px !important;
+    margin: 2px;
+}
+#impl{
+    display: grid;
+    grid-template-columns: auto auto;
+    
+}
+#impl p{
+    width: 50%;
+    margin-top: 10%;
+    margin-left: 2%;
+    color: white;
+}
+#impl img{
+    margin-left: 4px;
+}
+#repre{
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding:2px; 
+    background-color: rgba(255, 255, 255, 0.793);
+    width: 100%;
+}
+#database{
+    margin-right: 2px;
+}
+#datascience,#database,#software_engineering{
+    width: 400px !important;
+    height: 400px !important;
+    margin: 2px;
+}
+.Ethics1 {
+    display: grid;
+    grid-template-columns: auto auto ;
+    padding:5px;
+    background-color: white;
+}
+.content{
+    padding: 20px;
+    padding-top: 20%;
+}
+.sources a{
+    text-decoration: none;
+}

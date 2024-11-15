@@ -1,0 +1,192 @@
+<html lang="en">
+<header>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="article.css">
+    <title>Algorithmic Bias</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js"
+        integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <nav>
+        <a id="Home" href="#h">Home</a>
+        <a id="Ethics" href="#e">Ethics</a>
+        <a id="Sources" href="#s">Sources</a>
+    </nav>
+</header>
+<body>
+   <h1>Not seen equally: Algorithmic Bias</h1>
+   <h3><i>impact of fairness and public trust</i></h3>
+   <p>
+        Algorithmic bias is defined as the systematic and repeatable errors in a
+        system that results in unfair outcomes, that privileges certain groups from others.
+    </p>
+   <section id="h">
+       <h2>Algorithmic Bias?</h2>
+       <section id="first-section">
+           <div class="content-wrapper">
+                   <img src="iceberg.png" alt="iceberg"/>
+                   <p>
+                    <div class="picture-content"></p>
+                   <div class="picture-content">
+                       <p id="firstLayer">Errors from inadequet sample representation of data, its selection and interpretation</p>
+                       <p id="secondLayer">
+                        Cognitive and perception biases by groups or individuals involved in the model creation process
+                       </p>
+                       <p id="thirdLayer">
+                        Ingrained societal and institutional principles influencing the data produced and interpreted
+                       </p>
+                   </div>
+                </div>
+           </div>
+       </section>
+   </section>
+   <h3>algorithmic bias Iceberg</h3><a href="https://www.nist.gov/news-events/news/2022/03/theres-more-ai-bias-biased-data-nist-report-highlights">From NIST on Algorithmic Bias</a>
+   <br>
+   <br>
+   <h2>Problems of the Bias</h2>
+   <h3>Racial Bias: Facial Recognition Technology(FRT)</h3>
+   <img src="Picture4.jpg" alt="">
+   <p>
+        Facial recognition has been incorporated not just in phones, 
+        but Border Control, law enforcement and sometimes even banking. 
+        However, on January 2020 in Detroit, USA a 43 year old african american man
+        named Robert Williams got wrongfully arrested by the technology. After being convicted of expensive 
+        watch theft in a store, he spent 30hours in jail, in which 18hrs of the arrest he had no idea what 
+        he was arrested for or how he became a suspect. Turns out the FRT matched his driving licence photo 
+        with images of the theif caught on the surveillance cameras.  William’s was also dismissed because 
+        it turned out that the police officials”forgot” that in policy, a suspect indeitifed by FRT alone 
+        shouldn’t immediately be arrested. Sadly, these “little” mistakes resulted in an emotionally distressed 
+        family, damage to William’s reputation and further reinforcement of the racial prejudices against the 
+        african american community.
+   </p>
+   <img src="Picture5.jpg" alt="">
+   <p>
+    This is not the first time in fact the city of Detroit have been faced with 3 lawsuits against them due to faulty technology of this sort. 
+    Facial recognition technology is still quite faulty, with the main reason being the extreme biases in the data it’s given. People of colour 
+    are often underrepresented in the dataset used to train the models. 
+   </p>
+
+   <section id="e">
+       <h2>Ethical concerns </h2>
+       <h3>Practicalities</h3>
+       <section class="Ethics1">
+           <canvas id="inaccuracies"></canvas>
+           <div class="content">
+               <p>
+                Projects should be identified, assessed, addressed and avoided. Did the FRT get tested enough to be approved for usage in law enforcement?
+                On the City of Detroit website within the <b>115 crimes</b> that used facial recognition, <b>40%</b> of them inaccurate- yet at the time, more than a
+                thousand police departments in the country used this technology. <i>The National Institute of Standards and Technology(NIST USA)</i> hold many
+                tests on various FRTs and in one study conducted in 2019, found that in common one – to – one matchings of the technology, Asians and
+                African American faces had higher false positive rates than Caucasian faces, suggesting people of colour or more likely to be mistaken
+                for someone else by the system, like Mr Williams was.
+               </p>
+               <img src="Picture1.png" alt="picture">
+           </div>
+       </section>
+        <p>
+            In addition to this, a senior staff attorney at the time of the <i>American Civil Liberties Union (ACLU)</i>, Phil Mayor told reporters
+            <i>“We’ve repeatedly urged the Detroit Police Department to abandon its use of this dangerous technology, but it insists on using it
+            anyhow.”</i> .This suggests that the Detroit police department may have been ignoring the potential risks of the technology to its efficiency.
+        </p>
+       <h3>Misuse of data/violations</h3>
+       <p>
+        In the facial recognition policy of the Detroit Police Department, it clearly states under <b>Chapter 307.5</b> of the <i>Information Systems</i> section
+        <i>“The result of a facial recognition search is provided by the Detroit Police Department only as an investigative lead and IS NOT TO BE
+        CONSIDERED A POSITIVE IDENTIFICATION OF ANY SUBJECT. Any possible connection or involvement of any subject to the investigation must be
+        determined through further investigation and investigative resources.”</i>. Yet Mr Williams was still arrested and convicted of the crime,
+        having to sign a statement before even having any knowledge of the crime.
+       </p>
+       <h3>Transparency</h3>
+       <img src="Picture3.png" alt="">
+       <p>
+        When interviewed, Mr Williams remarked that he didn’t know they used facial recognition in the police department until talking to the detectives.
+        Individuals must have a right to know how their data is being used, but sadly Williams didn’t know his simple driving licence photo could cause
+        this situation. This would be breaching one of the <b>individual rights</b> of the <i>UK Data Protection Act</i> and <i>General Data Protection Regulations Act</i>
+        of the EU in which individuals have the right to know/be informed of how their data is being used
+       </p>
+       
+       <h2>Communication Challenges</h2>
+       <h3>Implementation of policies</h3>
+       <section id="impl">
+           <img src="Picture2.png" alt="">
+           <p>
+            There was seemingly a  misunderstanding of handling cases involving facial recognition technology, and how the technology is used with its
+            limitations to prosecuting a potential suspect.
+           </p>
+       </section>
+       <h3>Clear communication- public trust</h3>
+       <p>
+        A mentioned earlier, the fact that Mr Williams had no idea facial recognition was being used in the police department, displays the lack of
+        communication of law inforcement and their designated communities. Such incidents cause mistrust towards the justice system as a whole,
+        especially amongst the african american community
+       </p>
+   </section>
+   <h2>Improvements and Recommendations</h2>
+   <p>
+    <ol>
+        <li>
+            <p>
+                More development of concrete ethical guidelines on AI risk management, especially in facial recognition systems used in the real world 
+            </p>
+        </li>
+        <section id="repre">
+            <canvas id="datascience"></canvas>
+            <canvas id="software_engineering"></canvas>
+            <canvas id="database"></canvas>
+        </section>
+        <li>
+            <p>
+                Consistency in diversity of staff handling these computer models and data, and consistent evaluation of these systems(In the US alone,
+                <a href="https://www.mckinsey.com/bem/our-insights/how-to-close-the-black-tech-talent-gap"> only 4% of system analysts and engineers are black).</a>
+            </p>
+        </li>
+        <li>
+            <p>
+                More generalisable datasets and research- accommodating diversity and more balanced samples of different groups 
+            </p>
+        </li>
+        <li>
+            <p>
+                More considerations on ongoing research in collaboration of both developers, ethicists and users, bringing a more technological 
+                yet social approach 
+            </p>
+        </li>
+    </ol>
+   </p>
+   <h2>Conclusion</h2>
+   <p>
+    Algorithmic bias is a topic that should be held as a big concern within the community and public systems, especially considering the world’s 
+    growing dependence on Artificial Intelligence systems. To be concise in the creation of these algorithms must be taken seriously as small 
+    mistakes can lead to disasterous consequences on a larger scale. More policies to evaluate these systems, those making them and those using 
+    them, shoul be considered universally across the globe. Better interdisciplinary collaborations can help exapnd our human understanding in 
+    the complexities of Algorithmic design and prevention of bias.
+   </p>
+   <section id="s">
+       <h2>Sources</h2>
+       <section class="sources">
+           <ul>
+                The recommendation is a core message of a revised NIST publication,<i><a href="https://doi.org/10.6028/NIST.SP.1270"> Towards a Standard for Identifying and Managing Bias in Artificial Intelligence (NIST Special Publication 1270)</a></i>
+                <h3>Facial Recognition sources</h3>
+                <li><a href="https://detroitmi.gov/government/boards/board-police-commissioners/dpd-facial-recognition"> Facial recognition Stats for Detroit Police Department</a></li>
+                <li><a href="https://detroitmi.gov/documents?name=&field_department_target_id=%22Detroit%20Police%20Department%20Policies%22&field_description_value=&page=4"> Facial Recognition Policy(Detroit Police Department)</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Tfgi9A9PfLU"> https://www.youtube.com/watch?v=Tfgi9A9PfLU</a></li>
+                <li><a href="https://www.youtube.com/watch?v=Cx284WjpEQY"> https://www.youtube.com/watch?v=Cx284WjpEQY</a></li>
+                <li><a href="https://www.nist.gov/news-events/news/2019/12/nist-study-evaluates-effects-race-age-sex-face-recognition-software"> Demographics study on face recognition algorithms could help improve future tools. December 19, 2019</a></li>
+                <li><a href="https://pages.nist.gov/frvt/html/frvt1N.html"> NIST Research paper</a></li>
+                <li><a href="https://www.aclumich.org/en/press-releases/farmington-hills-father-sues-detroit-police-department-wrongful-arrest-based-fault"> FARMINGTON HILLS FATHER SUES DETROIT POLICE DEPARTMENT FOR WRONGFUL ARREST BASED ON FAULTY FACIAL RECOGNITION TECHNOLOGY</a></li>
+                <li><a href="https://www.technologyreview.com/2021/04/14/1022676/robert-williams-facial-recognition-lawsuit-aclu-detroit-police/"> MIT Tachnology Review-The new lawsuit that shows facial recognition is officially a civil rights issue</a></li>
+                <li><a href="https://mit-serc.pubpub.org/pub/bias-in-machine/release/1?readingCollection=34db8026"> The Bias in the Machine: Facial Recognition Technology and Racial Disparities</a></li>
+                <h3>Other sources </h3>
+                <li><a href="https://link.springer.com/article/10.1007/s11760-022-02246-8"> Ethical AI in facial expression analysis: racial bias Original Paper Published: 09 May 2022</a></li>
+                <li><a href="https://www.aclu.org/news/privacy-technology/police-say-a-simple-warning-will-prevent-face-recognition-wrongful-arrests-thats-just-not-true"> ACLU-Police Say a Simple Warning Will Prevent Face Recognition Wrongful Arrests. That's Just Not True.</a></li>
+                <li><a href="https://www.nytimes.com/2023/08/06/business/facial-recognition-false-arrest.html"> https://www.nytimes.com/2023/08/06/business/facial-recognition-false-arrest.html</a></li>
+                <li><a href="https://www.datacamp.com/blog/what-is-algorithmic-bias"> DataCamp-algorithmic-bias</a></li>
+                <li><a href="https://www.nist.gov/news-events/news/2022/03/theres-more-ai-bias-biased-data-nist-report-highlights"> There’s More to AI Bias Than Biased Data, NIST Report Highlights Rooting out bias in artificial intelligence will require addressing human and systemic biases as well.  March 16, 2022</a></li>
+           </ul>
+       </section>
+   </section>
+</body>
+<script src="main.js"></script>
+</html>
